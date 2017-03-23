@@ -275,8 +275,35 @@ public class FrmMainPayroll extends javax.swing.JFrame {
         transaction = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         createTransaction1 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
+        txtEmployeeIDTransaction = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
+        btnVerify2 = new javax.swing.JButton();
+        createTransaction3 = new javax.swing.JPanel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        lblNameTransaction1 = new javax.swing.JLabel();
+        lblDepartmentTransaction1 = new javax.swing.JLabel();
+        lblPositionTransaction1 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
         createTransaction2 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -292,6 +319,11 @@ public class FrmMainPayroll extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel36 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jLabel37 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
         viewTransaction = new javax.swing.JPanel();
         jButton9 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
@@ -441,15 +473,22 @@ public class FrmMainPayroll extends javax.swing.JFrame {
 
         jLabel5.setText("Employee ID");
 
+        btnVerify2.setText("verify");
+
         javax.swing.GroupLayout createTransaction1Layout = new javax.swing.GroupLayout(createTransaction1);
         createTransaction1.setLayout(createTransaction1Layout);
         createTransaction1Layout.setHorizontalGroup(
             createTransaction1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(createTransaction1Layout.createSequentialGroup()
-                .addGap(228, 228, 228)
-                .addComponent(jLabel5)
-                .addGap(60, 60, 60)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(createTransaction1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(createTransaction1Layout.createSequentialGroup()
+                        .addGap(228, 228, 228)
+                        .addComponent(jLabel5)
+                        .addGap(60, 60, 60)
+                        .addComponent(txtEmployeeIDTransaction, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(createTransaction1Layout.createSequentialGroup()
+                        .addGap(383, 383, 383)
+                        .addComponent(btnVerify2, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(763, Short.MAX_VALUE))
         );
         createTransaction1Layout.setVerticalGroup(
@@ -458,11 +497,167 @@ public class FrmMainPayroll extends javax.swing.JFrame {
                 .addGap(333, 333, 333)
                 .addGroup(createTransaction1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(387, Short.MAX_VALUE))
+                    .addComponent(txtEmployeeIDTransaction, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(116, 116, 116)
+                .addComponent(btnVerify2)
+                .addContainerGap(248, Short.MAX_VALUE))
         );
 
         jPanel4.add(createTransaction1, "card2");
+
+        createTransaction3.setOpaque(false);
+
+        jLabel38.setText("Name:");
+
+        jLabel39.setText("Department:");
+
+        jLabel40.setText("Jabatan");
+
+        lblNameTransaction1.setText("jLabel9");
+
+        lblDepartmentTransaction1.setText("jLabel10");
+
+        lblPositionTransaction1.setText("jLabel11");
+
+        jLabel41.setText("Total Absent");
+
+        jLabel42.setText("Gaji Kotor");
+
+        jLabel43.setText("Tunjangan");
+
+        jLabel44.setText("jLabel12");
+
+        jLabel45.setText("jLabel13");
+
+        jLabel46.setText("Deduction");
+
+        jLabel47.setText("Bulan");
+
+        jLabel48.setText("Tahun");
+
+        jLabel49.setText("jLabel49");
+
+        jLabel50.setText("jLabel50");
+
+        jLabel51.setText("jLabel51");
+
+        jLabel52.setText("jLabel52");
+
+        jLabel53.setText("Total Take Home Pay");
+
+        jLabel54.setText("jLabel54");
+
+        jLabel55.setText("Bank");
+
+        jLabel56.setText("jLabel56");
+
+        jLabel57.setText("No Rekening");
+
+        jLabel58.setText("jLabel58");
+
+        jButton2.setText("ok");
+
+        javax.swing.GroupLayout createTransaction3Layout = new javax.swing.GroupLayout(createTransaction3);
+        createTransaction3.setLayout(createTransaction3Layout);
+        createTransaction3Layout.setHorizontalGroup(
+            createTransaction3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(createTransaction3Layout.createSequentialGroup()
+                .addGroup(createTransaction3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(createTransaction3Layout.createSequentialGroup()
+                        .addGap(73, 73, 73)
+                        .addGroup(createTransaction3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel57)
+                            .addComponent(jLabel55)
+                            .addComponent(jLabel53)
+                            .addComponent(jLabel46)
+                            .addComponent(jLabel41)
+                            .addComponent(jLabel40)
+                            .addComponent(jLabel39)
+                            .addComponent(jLabel38)
+                            .addComponent(jLabel47))
+                        .addGap(42, 42, 42)
+                        .addGroup(createTransaction3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(createTransaction3Layout.createSequentialGroup()
+                                .addGroup(createTransaction3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel49)
+                                    .addGroup(createTransaction3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(lblNameTransaction1, javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(lblDepartmentTransaction1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(lblPositionTransaction1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addGap(244, 244, 244)
+                                .addGroup(createTransaction3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel42)
+                                    .addComponent(jLabel43))
+                                .addGap(53, 53, 53)
+                                .addGroup(createTransaction3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel45, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+                                    .addComponent(jLabel44, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(createTransaction3Layout.createSequentialGroup()
+                                .addGap(74, 74, 74)
+                                .addComponent(jLabel48)
+                                .addGap(39, 39, 39)
+                                .addComponent(jLabel50))
+                            .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel52)
+                            .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel56)
+                            .addComponent(jLabel58)))
+                    .addGroup(createTransaction3Layout.createSequentialGroup()
+                        .addGap(418, 418, 418)
+                        .addComponent(jButton2)))
+                .addContainerGap(696, Short.MAX_VALUE))
+        );
+        createTransaction3Layout.setVerticalGroup(
+            createTransaction3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(createTransaction3Layout.createSequentialGroup()
+                .addGap(76, 76, 76)
+                .addGroup(createTransaction3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel38)
+                    .addComponent(lblNameTransaction1)
+                    .addComponent(jLabel42)
+                    .addComponent(jLabel44))
+                .addGap(18, 18, 18)
+                .addGroup(createTransaction3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel39)
+                    .addComponent(lblDepartmentTransaction1)
+                    .addComponent(jLabel43)
+                    .addComponent(jLabel45))
+                .addGap(18, 18, 18)
+                .addGroup(createTransaction3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel40)
+                    .addComponent(lblPositionTransaction1))
+                .addGap(218, 218, 218)
+                .addGroup(createTransaction3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel47)
+                    .addComponent(jLabel48)
+                    .addComponent(jLabel49)
+                    .addComponent(jLabel50))
+                .addGap(18, 18, 18)
+                .addGroup(createTransaction3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel41)
+                    .addComponent(jLabel51))
+                .addGap(31, 31, 31)
+                .addGroup(createTransaction3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel46)
+                    .addComponent(jLabel52))
+                .addGap(38, 38, 38)
+                .addGroup(createTransaction3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel53)
+                    .addComponent(jLabel54))
+                .addGap(33, 33, 33)
+                .addGroup(createTransaction3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel55)
+                    .addComponent(jLabel56))
+                .addGap(18, 18, 18)
+                .addGroup(createTransaction3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel57)
+                    .addComponent(jLabel58))
+                .addGap(27, 27, 27)
+                .addComponent(jButton2)
+                .addContainerGap(106, Short.MAX_VALUE))
+        );
+
+        jPanel4.add(createTransaction3, "card4");
 
         createTransaction2.setOpaque(false);
 
@@ -470,7 +665,7 @@ public class FrmMainPayroll extends javax.swing.JFrame {
 
         jLabel7.setText("Department:");
 
-        jLabel8.setText("Position:");
+        jLabel8.setText("Jabatan");
 
         lblNameTransaction.setText("jLabel9");
 
@@ -480,15 +675,25 @@ public class FrmMainPayroll extends javax.swing.JFrame {
 
         jLabel9.setText("Total Absent");
 
-        jLabel10.setText("Gross salary:");
+        jLabel10.setText("Gaji Kotor");
 
-        jLabel11.setText("Allowance:");
+        jLabel11.setText("Tunjangan");
 
         jLabel12.setText("jLabel12");
 
         jLabel13.setText("jLabel13");
 
         jLabel14.setText("Deduction");
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jLabel36.setText("Bulan");
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jLabel37.setText("Tahun");
+
+        jButton3.setText("Next");
 
         javax.swing.GroupLayout createTransaction2Layout = new javax.swing.GroupLayout(createTransaction2);
         createTransaction2.setLayout(createTransaction2Layout);
@@ -501,25 +706,35 @@ public class FrmMainPayroll extends javax.swing.JFrame {
                     .addComponent(jLabel9)
                     .addComponent(jLabel8)
                     .addComponent(jLabel7)
-                    .addComponent(jLabel6))
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel36))
                 .addGap(42, 42, 42)
                 .addGroup(createTransaction2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(createTransaction2Layout.createSequentialGroup()
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel37)
+                        .addGap(29, 29, 29)
+                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(createTransaction2Layout.createSequentialGroup()
-                        .addGroup(createTransaction2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblNameTransaction, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblDepartmentTransaction, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblPositionTransaction, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(244, 244, 244)
                         .addGroup(createTransaction2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel11))
+                            .addGroup(createTransaction2Layout.createSequentialGroup()
+                                .addGroup(createTransaction2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblNameTransaction, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblDepartmentTransaction, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblPositionTransaction, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(244, 244, 244)
+                                .addGroup(createTransaction2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel10)
+                                    .addComponent(jLabel11)))
+                            .addComponent(jButton3))
                         .addGap(53, 53, 53)
                         .addGroup(createTransaction2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
                             .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(724, Short.MAX_VALUE))
+                .addContainerGap(736, Short.MAX_VALUE))
         );
         createTransaction2Layout.setVerticalGroup(
             createTransaction2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -540,7 +755,13 @@ public class FrmMainPayroll extends javax.swing.JFrame {
                 .addGroup(createTransaction2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(lblPositionTransaction))
-                .addGap(124, 124, 124)
+                .addGap(215, 215, 215)
+                .addGroup(createTransaction2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel36)
+                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel37))
+                .addGap(18, 18, 18)
                 .addGroup(createTransaction2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -548,7 +769,9 @@ public class FrmMainPayroll extends javax.swing.JFrame {
                 .addGroup(createTransaction2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14)
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(407, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 111, Short.MAX_VALUE)
+                .addComponent(jButton3)
+                .addGap(144, 144, 144))
         );
 
         jPanel4.add(createTransaction2, "card4");
@@ -1712,6 +1935,7 @@ public class FrmMainPayroll extends javax.swing.JFrame {
     private javax.swing.JButton btnTransaction;
     private javax.swing.JButton btnUpdateBank1;
     private javax.swing.JButton btnVerify;
+    private javax.swing.JButton btnVerify2;
     private javax.swing.JComboBox<String> cboEmployeeAgama;
     private javax.swing.JComboBox<String> cboEmployeeIdBank;
     private javax.swing.JComboBox<String> cboEmployeeIdDepartment;
@@ -1721,14 +1945,19 @@ public class FrmMainPayroll extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cboEmployeeTipeKaryawan;
     private javax.swing.JPanel createTransaction1;
     private javax.swing.JPanel createTransaction2;
+    private javax.swing.JPanel createTransaction3;
     private javax.swing.JPanel department;
     private javax.swing.JPanel employee;
     private javax.swing.JPanel empty;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton9;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1758,8 +1987,31 @@ public class FrmMainPayroll extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -1771,15 +2023,17 @@ public class FrmMainPayroll extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JLabel lblBackground;
     private javax.swing.JLabel lblDepartmentID;
     private javax.swing.JLabel lblDepartmentName;
     private javax.swing.JLabel lblDepartmentTransaction;
+    private javax.swing.JLabel lblDepartmentTransaction1;
     private javax.swing.JLabel lblNameTransaction;
+    private javax.swing.JLabel lblNameTransaction1;
     private javax.swing.JLabel lblPositionTransaction;
+    private javax.swing.JLabel lblPositionTransaction1;
     private javax.swing.JPanel main;
     private javax.swing.JTable tblBank;
     private javax.swing.JTable tblDepartment;
@@ -1793,6 +2047,7 @@ public class FrmMainPayroll extends javax.swing.JFrame {
     private javax.swing.JTextField txtEmployeeEmail;
     private javax.swing.JTextField txtEmployeeGajiKotor;
     private javax.swing.JTextField txtEmployeeID;
+    private javax.swing.JTextField txtEmployeeIDTransaction;
     private javax.swing.JTextField txtEmployeeName;
     private javax.swing.JTextField txtEmployeeNik;
     private javax.swing.JTextField txtEmployeeNoHP;
